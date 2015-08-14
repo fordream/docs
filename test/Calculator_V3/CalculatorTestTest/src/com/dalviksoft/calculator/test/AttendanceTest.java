@@ -3,18 +3,16 @@ package com.dalviksoft.calculator.test;
 import android.test.ActivityInstrumentationTestCase2;
 import android.widget.EditText;
 
-import com.exacmple.mauto.Main1Activity;
-import com.exacmple.mauto.MainActivity;
-import com.exacmple.mauto.R;
+import com.dalviksoft.calculator.Main;
 import com.robotium.solo.Solo;
 import com.robotium.solo.Solo.Config;
 import com.robotium.solo.Solo.Config.ScreenshotFileType;
 
-public class AttendanceTest extends ActivityInstrumentationTestCase2<MainActivity> {
+public class AttendanceTest extends ActivityInstrumentationTestCase2<Main> {
 	private Solo solo;
 
 	public AttendanceTest() {
-		super(MainActivity.class);
+		super(Main.class);
 	}
 
 	// @Before
@@ -35,15 +33,16 @@ public class AttendanceTest extends ActivityInstrumentationTestCase2<MainActivit
 
 	// @Test
 	public void testAttendance() throws Exception {
-		EditText login = (EditText) solo.getCurrentActivity().findViewById(com.exacmple.mauto.R.id.editText1);
-		solo.enterText(login, "abc123");
-		solo.clickOnView(solo.getCurrentActivity().findViewById(R.id.button1));
 		
-		if (solo.waitForActivity(Main1Activity.class)) {
-			assertTrue("test success", true);
-		} else {
-			assertTrue("test success", false);
-		}
+//		EditText login = (EditText) solo.getCurrentActivity().findViewById(com.exacmple.mauto.R.id.editText1);
+//		solo.enterText(login, "abc123");
+//		solo.clickOnView(solo.getCurrentActivity().findViewById(R.id.button1));
+//		
+//		if (solo.waitForActivity(Main1Activity.class)) {
+//			assertTrue("test success", true);
+//		} else {
+//			assertTrue("test success", false);
+//		}
 	}
 
 	/**

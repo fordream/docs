@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0056)http://forums.testervn.com/archive/index.php/t-3591.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="keywords" content=" 8 hướng dẫn viết test case hoàn chỉnh, testervn, vn tester, tester, vntester, diễn đàn tester việt nam, tester việt nam, việt nam tester">
+	<meta name="description" content="[Lưu Trữ]  8 hướng dẫn viết test case hoàn chỉnh Tài liệu">
+	
+	<title> 8 hướng dẫn viết test case hoàn chỉnh [Lưu Trữ]  - Tester Việt Nam</title>
+	<link rel="stylesheet" type="text/css" href="./8 hướng dẫn viết test case hoàn chỉnh [Lưu Trữ] - Tester Việt Nam_files/archive.css">
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="http://forums.testervn.com/archive/index.php">Tester Việt Nam</a> &gt; <a href="http://forums.testervn.com/archive/index.php/f-89.html">Kiến thức Testing</a> &gt; <a href="http://forums.testervn.com/archive/index.php/f-230.html">Kiến thức cơ bản</a> &gt; <a href="http://forums.testervn.com/archive/index.php/f-289.html">Tài liệu</a> &gt;  8 hướng dẫn viết test case hoàn chỉnh</div>
+<hr>
+<div class="pda"><a href="http://forums.testervn.com/archive/index.php/t-3591.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="http://forums.testervn.com/showthread.php?t=3591">8 hướng dẫn viết test case hoàn chỉnh</a></p>
+<hr>
+
+<div class="post"><div class="posttop"><div class="username">testervn</div><div class="date">09-03-2012, 03:10 PM</div></div><div class="posttext">8 hướng dẫn viết test case hoàn chỉnh<br>
+<br>
+By Marcin Zręda <br>
+<br>
+---------------------<br>
+Làm thế nào để bạn giải thích cho một tester mới vào nghề về cách viết, thực hiện và báo cáo các test case? Đó là một công việc khó khăn, tôi đã nhận ra điều này khá gần đây trong lúc đào tạo một tester mới trong nhóm. Tôi đã có mọi thứ trong đầu nhưng không có một lời giải thích rõ ràng và nhất quán trên giấy tờ. Tôi đã có nhiều năm kinh nghiệm, không may, cũng không giúp tôi biện minh và giải thích vấn đề này. Bài viết này là một cố gắng để hoàn thành những suy nghĩ của tôi đến từ môi trường sản xuất phần mềm.<br>
+<br>
+Để bắt đầu, sẽ có một vài câu để làm rõ về các test case và test scenario và chúng khác nhau như thế nào và theo thứ tự nào. Bắt đầu từ cuối cùng, chúng ta hãy trả lời câu hỏi "thứ tự nào?"<br>
+<br>
+Test case là sự mô tả, công thức cho tester, liên hệ giữa việc làm thế nào để test chức năng và làm thế nào để kiểm tra hệ thống hoạt động đúng hay không. Nhìn vào cấu trúc, chúng ta có thể định nghĩa được các loại quan hệ: Test scenario -&gt; test case -&gt; Test Step. Lại bắt đầu từ cuối cùng, bởi vì như vậy sẽ dễ dàng hơn, Tôi có thể viết như sau: <br>
+<br>
+* Test Step – quy định cụ thể một hành động để thực hiện, và đáp ứng mong đợi của ứng dụng test. Ví dụ:<br>
+Hành động: Nhập password vào ô password,<br>
+Kết quả mong đợi: password của bạn sẽ hiển thị là *** hoặc ẩn.<br>
+<br>
+* Test Case – là một danh sách các test step. Cũng định nghĩa trạng thái môi trường và có thể liên kiết đến các bug, spec (đặc tả yêu cầu) liên quan,…<br>
+<br>
+* Test Scenario – thường có được trực tiếp từ các đặc tả yêu cầu của khách hàng hoặc user-story. Các công cụ quản lý thường bỏ qua test scenario để kết nối với một danh sách các đặc tả yêu cầu. Scenario chứa một danh sách các test case và nhiều phối hợp của chúng.<br>
+<br>
+Như các bạn có thể thấy, sự khác nhau giữa test scenario và test case là đáng kể, và thường thường hai khái niệm này thì mơ hồ.<br>
+Làm thế nào để đảm bảo chất lượng cho test case đã tạo được? Làm thế nào để quản lý life cycle của nó? Làm thế nào để hoàn thành nó sớm và khi nào thì Dev cần nó?<br>
+<br>
+1. Template – cần một hoặc nhiều mẫu hoàn thành để viết test case. Chúng ta có thể tạo test case trong MS Word, MS excel hoặc mua hoặc chỉnh sửa lại các tool khác. Tôi đã viết bài này bằng chương trình soạn thảo JIRA.<br>
+<br>
+2. Descriptive và specific – các bạn cần miêu tả tiêu đề ngắn gọn, xúc tích. Nên định nghĩa các mục đích và phạm vi của các hoạt động test một cách rõ ràng. Chúng ta đang viết cho tất cả các tester, chứ không chỉ viết riêng cho chính mình, sử dụng ngôn ngữ đơn giản, miêu tả bằng ngôn ngữ phức tạp trong test case thì không phổ biến. Nên dùng theo kiểu câu mệnh lệnh, ví dụ, nên ghi là “Nhập abc và nhấn enter” chứ không nên ghi “Tôi đang nhập abc, và sau đó nhấn Enter.”<br>
+<br>
+3. Reusable – một và nhiều test case giống nhau có thể được sử dụng trong nhiều scenario. Hãy nhớ rằng! Khi tạo một hạng mục mới, chúng ta phải tưởng tượng ra một loại use case khác với loại mà chúng ta đang làm. Tôi cũng tưởng tượng rằng bước test cũng có thể được tái sử dụng, vì vậy bạn cũng phải nên chú ý đến mức này.<br>
+<br>
+4. Atomic – ác mộng lớn nhất của tester vật lộn với test thủ công (bằng tay) là test case, vì nó có quá dài và làm quá nhiều kiểm tra phụ thuộc nhau. Người tiến hành một tiến trình phải có ý thích về tiến trình đó, ngược lại thì thật chán, giảm cảnh giác với nó, và nhiệt huyết. Tester có thể phải thực hiện 100 test case và thực hiện nó trong một ngày, nhưng nó cũng có thể có 10 test case và thực hiện nó trong 1 tuần. Chúng ta hãy tạo test case, điều này có thể làm trong vài phút và nó giúp ta giành được nhiều thiện chí của các tester đồng nghiệp khác hơn, trong số các sự hài lòng, chúng ta cũng có thể là người viết script test tự động.<br>
+<br>
+5. Positive and negative (test trường hợp đúng và trường hợp sai) – điều quan trọng tiếp theo là thứ tự của việc tạo test case. Làm gì khi project manager yêu cầu một tập test case vào một ngày đã duyệt trong kế hoạch tiến hành? Thường thì chúng ta không nói rằng anh ấy chỉ muốn bắt đầu bằng các trường hợp test tích cực (chỉ test trường hợp đúng), các trường hợp này là dùng để kiểm tra chức năng tồn tại và các hành động theo đúng với spec (đặc tả yêu cầu của khách hàng). Đưa cho anh ta một tập test case càng sớm càng tốt, thì chúng ta có thể thương lượng anh ta phê chuẩn các trường hợp test sai và các quan hệ giữa các yêu cầu khác. Tóm lại: Positive -&gt; Negative -&gt; Relationships<br>
+<br>
+6. Refactor – nếu bạn đã sẵn sàng kết thúc công việc thì chúng ta phải nhớ rằng các ứng dụng thì thay đổi và các thay đổi trong test case sẽ làm theo trình tự này (theo 8 bước này). Chúng ta nên tạo version cho nó, bắt chước cách thay đổi version number (1.0 -&gt; 1.1 -&gt;…). Quản lý test (ví dụ QC leader) sẽ ước lượng chúng ta sẽ làm có bao nhiêu version và chúng ta nên quan tâm về tập hợp các test case hiện tại của chúng ta. <br>
+<br>
+7. Test data (dữ liệu dùng để test) – đây là những điều quan trọng song song với việc thực hiện test đúng thì chúng ta phải cung cấp một số data, thường thì (nếu nó quá phức tạp để mô tả trong tài liệu này) được đính kèm bằng một file khác. Chúng ta cần phải phân tích cho dù nó dễ cung cấp test data hay dễ thêm vào các bước test thích hợp.<br>
+<br>
+8. Setup and tear down (sắp xếp và tỉa tót lại test case) – nếu test case yêu cầu phải có cấu hình ban đầu, gọi một component riêng biệt, chúng ta cần phải mô tả nó về bước đầu tiên (zero step). Điều này cũng quan trọng để dọn dẹp trong bước bước cuối cùng giống như trong test unit (whitebox) hoặc test tự động, nhưng tôi tin rằng test thủ công thì đáng để sử dụng tốt các bước thực hành này.<br>
+<br>
+Cuối cùng<br>
+Phải sử dụng hết khả năng quan sát nếu bạn không đồng ý với việc ghi lại ghi chú. Có lẽ tôi đã giữ lại một số điều, nếu tôi có bỏ sót điều gì tôi sẽ cập nhật lại sau. Lúc này tôi chỉ có thể nghĩ ra bấy nhiêu đây thôi. Tôi hứa là sẽ post bài giải thích cấu trúc của một mẫu test case.<br>
+<br>
+(Sưu tầm)</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">hungmt</div><div class="date">13-03-2012, 12:10 AM</div></div><div class="posttext">hầu hết các testcase (testcase viết = word / excel, tức là văn bản) đều phải dựa vào một loại văn bản khác, đó là specification.<br>
+- Q: Vậy specification từ đâu mà có ?<br>
+- A: Từ khách hàng.<br>
+<br>
+VD: mình nói về chuyện xây nhà đi nha:<br>
+  Khách hàng gặp công ty mình để xây nhà, mô tả những gì khách hàng muốn và kí hợp đồng v.v...<br>
+- sau khi thảo luận với khách hàng, công ty mình sẽ có một văn bản như sau:<br>
+Khách hàng muốn căn nhà của họ:<br>
+- công ty hỏi: quí khách muốn nhà cao bao nhiêu tầng ? - trả lời 3 tầng - ghi vào văn bản <br>
+- công ty hỏi: quí khách muốn nhà có mấy phòng ? - trả lời 5 phòng - ghi vào văn bản <br>
+- công ty hỏi: quí khách muốn nhà sơn màu gì ? - trả lời màu hồng - ghi vào văn bản<br>
+- công ty hỏi: quí khách muốn nhà có mấy cầu thang ? - trả lời 3 cầu thang - ghi vào văn bản<br>
+.......<br>
+Thế là chúng ta có một specification / cũng có thể gọi là yêu cầu requirement:<br>
+-nhà cao 3 tầng<br>
+-nhà có 5 phòng<br>
+-nhà sơn màu hồng<br>
+-nhà có 3 cầu thang<br>
+Văn bản này sẽ chuyển xuống cho tester đọc/hiểu. Tester phải hiểu rất là kĩ văn bản này và bắt đầu viết testcase.<br>
+<br>
+Khi viết testcase, tester sẽ sẽ viết như sau:<br>
+- check xem căn nhà cao bao nhiêu tầng ?<br>
+- kết quả mong muốn: 3 tầng<br>
+- kết quả thực tế: 4 tầng (sai/failed)<br>
+<br>
+-check xem căn nhà có bao nhiêu phòng ?<br>
+- kết quả mong muốn: 5 phòng<br>
+- kết quả thực tế: 5 tầng (đúng/passed)<br>
+<br>
+-tiếp tục như thế....<br>
+<br>
+các bạn newbie thấy các câu nhà cao bao nhiêu tầng ? nhà có bao nhiêu phòng ? cứ lặp đi lặp lại từ khi gặp khách hàng cho tới khi mình viết ko ? chỉ thêm có dấu ? vào phía sau.<br>
+<br>
+Viết testcase làm đơn giản vậy thôi, tất nhiên đây là khái niệm sơ đẳng nhất cho cấp độ newbie / fresher chưa có kinh nghiệm. Nhưng nếu hiểu được thì khi đi phỏng vấn sẽ tự tin hơn, ko bị nhà tuyển dụng hù nữa :T (9): Muốn viết testcase phải có specification (bản yêu cầu, bản mô tả) chứ ko thể nào trong vòng 30ph pv, đưa cho bạn 1 tờ giấy kêu viết testcase về một trang cái máy ATM được (đây là pv người có kn rồi)<br>
+Gặp trường hợp này bạn phải hỏi họ yêu cầu của máy ATM là gì...... hỏi càng nhiều càng tốt, gạch đầu dòng những gì họ mô tả về cái máy, sau đó viết lại và thêm dấu chấm hỏi vào thôi :D.<br>
+<br>
+Những kiến thức của anh testervn sẽ cần thiết cho bạn về sau này, chứ newbie chưa có kn mà nghe những điều này càng thêm hoang mang. Cứ lo lắng làm sao viết được testcase, ko biết dựa vào đâu. Testcase là dựa vào specification đó mấy bạn.<br>
+<br>
+Còn trường hợp pv, khi mình hỏi người pv cái bản yêu cầu gồm những gì ? mà họ ko trả lời, cứ nói e biết gì thì cứ viết đi thì cố gắng mà vặc lại họ nhé :D vì ko có 1 khách hàng nào liều mạng, tốn tiền đi làm phần mềm mà ko có yêu cầu: tôi ko biết gì hết, các anh muốn viết sao cũng được / muốn làm sao cũng được (lúc đó mình bàn giao cho khác hàng thay vì căn nhà mà đưa họ cái chuồng heo thì sao ? cũng có nóc nhà, cột nhà, sàn nhà đầy đủ mà...) :T (18):<br>
+glter</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">nguyen.thoa</div><div class="date">15-03-2012, 09:39 AM</div></div><div class="posttext">Thực tế và hữu ích. Thank bạn nhé:T (3):</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">Lua</div><div class="date">20-03-2012, 08:20 PM</div></div><div class="posttext">Bo sung them vai yeu cau khi tao cac test cases/sets:<br>
+- Document history: trong test case se luon co initial draft, moi nguoi deu co the review va update. Cac document history se luu lai thong tin ma cac reviewers da update<br>
+- Error guessing: Nhu cac ban da de cap o tren, cac test case duoc thiet lap dua tren cac userstories, voi cac negative/positive scenario. Nhung dong thoi, cac test case co the thiet lap dua vao kinh nhiem cua cac tester, specs va requirements khong the cover het function cua app/products, nen error guessing co the giup do trong viec tao test cases<br>
+- Khi thiet lap cac test case, time estimation can duoc luu y. Neu cac test case qua dai thi nen chia thanh cac phan nho. vi chang 1 tester nao muon ngoi 10h va cam dau vao test ca ;)<br>
+- 1 test case se khong duoc su dung trong qua trinh E2E neu nhu khong co 1 official specs/req, mac du cac test case nay co the duoc su dung trong qua trinh component hoac integration<br>
+<br>
+(Xin loi vi khong dung duoc Unikey nhe :) )</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">minhkaka</div><div class="date">22-03-2012, 09:53 AM</div></div><div class="posttext">Bo sung them vai yeu cau khi tao cac test cases/sets:<br>
+- Document history: trong test case se luon co initial draft, moi nguoi deu co the review va update. Cac document history se luu lai thong tin ma cac reviewers da update<br>
+- Error guessing: Nhu cac ban da de cap o tren, cac test case duoc thiet lap dua tren cac userstories, voi cac negative/positive scenario. Nhung dong thoi, cac test case co the thiet lap dua vao kinh nhiem cua cac tester, specs va requirements khong the cover het function cua app/products, nen error guessing co the giup do trong viec tao test cases<br>
+- Khi thiet lap cac test case, time estimation can duoc luu y. Neu cac test case qua dai thi nen chia thanh cac phan nho. vi chang 1 tester nao muon ngoi 10h va cam dau vao test ca ;)<br>
+- 1 test case se khong duoc su dung trong qua trinh E2E neu nhu khong co 1 official specs/req, mac du cac test case nay co the duoc su dung trong qua trinh component hoac integration<br>
+<br>
+(Xin loi vi khong dung duoc Unikey nhe :) )<br>
+<br>
+Hix, cao siêu quá :T (10):</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">vanfsn</div><div class="date">08-04-2012, 03:41 PM</div></div><div class="posttext">Thanks vi huong dan! :T (12):</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">Star-Fire</div><div class="date">07-08-2012, 08:00 PM</div></div><div class="posttext">Còn gì nữa không mấy bác?! Em muốn bít thêm, càng nhiều càng ít...<br>
+<br>
+Thanks for share!!</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">hoasaobang</div><div class="date">20-09-2012, 07:55 AM</div></div><div class="posttext">Thanks:T (3)::T (21):</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">ptmaiphuong1987</div><div class="date">25-09-2012, 02:56 PM</div></div><div class="posttext">Có requirement thì viết test case dễ rồi, còn mình đây thì chẳng có requirement luôn, cứ viết test case dựa vào chương trình đang chạy :)) Mấy bữa nay được làm việc với 1 chuyên gia QA người Đức, hiểu thêm được cách viết test case chuyên nghiệp :T (13):, có điều nhiều quá, nhìn ngán thiệt.:T (11):</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">hsuchister</div><div class="date">25-09-2012, 03:46 PM</div></div><div class="posttext">Có requirement thì viết test case dễ rồi, còn mình đây thì chẳng có requirement luôn, cứ viết test case dựa vào chương trình đang chạy :)) Mấy bữa nay được làm việc với 1 chuyên gia QA người Đức, hiểu thêm được cách viết test case chuyên nghiệp :T (13):, có điều nhiều quá, nhìn ngán thiệt.:T (11):<br>
+ủa, không có yêu cầu rõ ràng thì làm sao bên dev lập trình được, bạn qua bên team dev mà xin document.</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">ptmaiphuong1987</div><div class="date">25-09-2012, 04:06 PM</div></div><div class="posttext">ủa, không có yêu cầu rõ ràng thì làm sao bên dev lập trình được, bạn qua bên team dev mà xin document.<br>
+Dev cũng không có document luôn mới vui, khách hàng chat qua, yêu cầu cái này cái kia =&gt; dev làm =&gt; quăng cho mình test =&gt; vừa test vừa viết test case :T (14):</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">testervn</div><div class="date">25-09-2012, 05:26 PM</div></div><div class="posttext">Được Tester đến từ Đức hướng dẫn thì học hỏi thêm nhiều thứ lắm nhỉ? nhớ share nha bạn :T (4):</div></div><hr>
+
+
+<div class="post"><div class="posttop"><div class="username">lelan</div><div class="date">09-10-2012, 03:05 PM</div></div><div class="posttext">Mình cũng giống bạn ptmaiphuong1987 đấy!<br>
+Khó khăn của mình là mới vào nghề nên chưa có kinh nghiệm viết Test case, trước giờ công ty mình cũng chưa có đội Test chuyên nghiệp nên mình cũng không biết hỏi kinh nghiệm ở đâu cả!:T (13):<br>
+Các Pro có nhiều kinh nghiệm, chia sẻ với những người như mình với nhé!<br>
+Thanks!</div></div><hr>
+
+
+<div id="copyright">vBulletin® v2.0.13, Copyright ©2000-2015, Jelsoft Enterprises Ltd.</div>
+</div>
+
+</body></html>

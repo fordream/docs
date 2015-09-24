@@ -1,0 +1,60 @@
+﻿<testsuite
+name="SkyTestSuite"
+rxversion="5.4.2.25689"
+id="ae0fa204-45ac-4f71-b0c0-1073d7aeb739"
+reportfilename="%S_%Y%M%D_%T.rxlog"
+reporttemplatefolder=""
+reportxslfilename=""
+placescreenshotsinfolder="True"
+ReportTime="RelativeToTestSuiteStartTime"
+reportwriteinterval="30000ms"
+reportcompress="False"
+enabletracingscreenshots="True"
+TracingScreenshotMode="Foreground"
+TracingScreenshotQuality="40"
+reportlevel="Info;20">
+	<content>
+		<testcase
+		name="Test001_install_appk"
+		id="d97fae0a-9662-4ddc-8de0-2ab733a97c45">
+			<testmodule
+			name="Test001_insttall_apk"
+			id="6ee0c34b-e3fa-49d1-8b29-9d50a4bf5df0"
+			ref="b7c8d521-df31-43d7-95c8-c42a5ec1a8ee"
+			type="Recording"/>
+		</testcase>
+		<testcase
+		name="Test002_popup_notifycation"
+		id="d328a4e2-821b-4c0a-aecb-7c7a402c705d">
+			<testmodule
+			name="Test002_popup_notifycation"
+			id="9ccfb462-69e7-420b-8f66-5ca98fe4cd8a"
+			ref="71a72134-a2aa-488b-aec0-7c305e8246d6"
+			type="Recording"/>
+		</testcase>
+		<testcase
+		name="Test003_login"
+		id="98fda5cd-612e-4f52-8943-57bcc0d349ad">
+			<testmodule
+			name="Test003_login"
+			id="cc2f7fc2-dfc6-43ec-835c-9ec12fe75c4c"
+			ref="781c5916-2f50-470d-af0a-5b9e8a9072d4"
+			type="Recording"/>
+		</testcase>
+	</content>
+	<testconfigurations
+	default="TestRun">
+		<testconfiguration
+		name="TestRun">
+			<testcase
+			id="98fda5cd-612e-4f52-8943-57bcc0d349ad"/>
+			<testcase
+			id="ae0fa204-45ac-4f71-b0c0-1073d7aeb739"/>
+			<testcase
+			id="d328a4e2-821b-4c0a-aecb-7c7a402c705d"/>
+			<testcase
+			id="d97fae0a-9662-4ddc-8de0-2ab733a97c45"/>
+		</testconfiguration>
+	</testconfigurations>
+	<references/>
+</testsuite>

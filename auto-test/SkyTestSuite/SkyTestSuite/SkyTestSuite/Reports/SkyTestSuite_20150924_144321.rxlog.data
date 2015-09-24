@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report>
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="29ebee85f480688"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="1"
+		totalblockedcount="2"
+		user="tv"
+		host="TV-PC"
+		rxversion="5.4.2.25689"
+		osversion="Windows 7 32bit"
+		runtimeversion="4.0.30319.17929"
+		procarch="32bit"
+		language="en-US"
+		screenresolution="1366x768"
+		timestamp="9/24/2015 2:43:21 PM"
+		timestampiso="2015-09-24T07:43:21"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="183ms"
+			durationms="183"
+			type="test suite"
+			rid="24a62d4810ed334a"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="1"
+			totalblockedcount="2"
+			testsuitename="SkyTestSuite"
+			runconfigname="TestRun"
+			runlabel=""
+			maxchildren="3">
+			<params/>
+			<detail>
+			</detail>
+			<activity
+				result="Ignored"
+				duration="3ms"
+				durationms="3"
+				type="test case"
+				rid="53e3f3367c5fc86"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="0"
+				totalblockedcount="1"
+				testcasename="TestCase"
+				testcaseid="d97fae0a-9662-4ddc-8de0-2ab733a97c45"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+			</activity>
+			<activity
+				result="Ignored"
+				duration="1ms"
+				durationms="1"
+				type="test case"
+				rid="923599fbc9fd722"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="0"
+				totalblockedcount="1"
+				testcasename="TestCase1"
+				testcaseid="d328a4e2-821b-4c0a-aecb-7c7a402c705d"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+			</activity>
+			<activity
+				result="Failed"
+				duration="147ms"
+				durationms="147"
+				type="test case"
+				rid="5ae67d854395d7a"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				testcasename="test1"
+				testcaseid="b8d4e219-b683-4a01-b809-b9d550da6b45"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+					result="Failed"
+					duration="131ms"
+					durationms="131"
+					type="test module"
+					rid="41a6793b0b5610"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="Test1"
+					moduleid="e1b4dbd4-15ad-40f7-91be-fd928169aea7"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<errmsg>
+						The module 'Test1' (with ID {e1b4dbd4-15ad-40f7-91be-fd928169aea7}) could not be found.
+					</errmsg>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.166"
+						timeRelativeToTestModuleStartTime="00:00.021"
+						timeWallClock="14:43:21"
+						time="00:00.166"
+						level="Error"
+						category="Module"
+						errimg="images_SkyTestSuite_20150924_144321\SkyTestSuite_20150924_144321_1735918b_trace.jpg"
+						errthumb="images_SkyTestSuite_20150924_144321\SkyTestSuite_20150924_144321_1735918b_trace_thumb.jpg">
+						<message>
+							The module 'Test1' (with ID {e1b4dbd4-15ad-40f7-91be-fd928169aea7}) could not be found.
+						</message>
+						<metainfo
+							stacktrace="   at Ranorex.Core.Testing.TestSuiteModule.RunInternal(DataContext parentDataContext)"
+							loglvl="Error"/>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="5.4.2.25689"
+id="25f48f15-aca8-405a-b8ba-d22670b787c2"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		RecordForTestCase1
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="RecordForTestCase1"
+	namespace="SkyTestSuite"/>
+	<variables/>
+	<recorditems>
+		<deployapkrecorditem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		devicename="USB-0123456789ABCDEF"
+		apkpath="C:\Users\tv\Desktop\test\Sky.apk"
+		instrument="True"
+		timeout="600000ms">
+			<comment/>
+			<bindings/>
+			<InstrumentApkOptions
+			InstrumentationFlags=""
+			EnableWebTesting="True"
+			TreeSimplification="True"
+			FullImageComparison="True"
+			RIdClass=""
+			KeyStore=""
+			KeyAlias=""
+			JdkBinPath=""
+			KeyStorePass=""
+			KeyPass=""/>
+		</deployapkrecorditem>
+	</recorditems>
+	<repository
+	name="SkyTestSuiteRepository"
+	id="cd779c9c-f72c-4fcc-a01e-8f144bc6bc9c"
+	rxversion="5.4.2.25689"
+	relativepath="SkyTestSuiteRepository.rxrep">
+		<codegen
+		classname="Test1Repository"
+		namespace="SkyTestSuite"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="09ad0020-c27d-478a-a523-fec26dcd45f2"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		RecordForTestCase1.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

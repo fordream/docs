@@ -1,0 +1,161 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{5EECDBFF-0086-4E78-9A66-C677BD88015C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SkyTestSuite</RootNamespace>
+    <AssemblyName>SkyTestSuite</AssemblyName>
+    <RanorexVersion>5</RanorexVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <projectdefaultrepository>3a9e1326-6bf7-47c7-90f1-453457037cd1</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Qt, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Sap, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Uia, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>67b52235-2afd-4ba9-9b8e-1ed4dc5ce83e</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>fd861882-9630-4b02-832c-1aa31c504c5c</id>
+    </Compile>
+    <Compile Include="Test001_insttall_apk.cs">
+      <BoundTo>54e36f21-6f59-453f-bff5-050c36c78b97</BoundTo>
+      <DependentUpon>Test001_insttall_apk.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1e2b1211-d4f7-4769-96c0-176b59fc4bad</id>
+    </Compile>
+    <Compile Include="Test001_insttall_apk.UserCode.cs">
+      <BoundTo>54e36f21-6f59-453f-bff5-050c36c78b97</BoundTo>
+      <DependentUpon>Test001_insttall_apk.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1dcdf417-fbae-47be-b459-3c1ff7e3801d</id>
+    </Compile>
+    <Compile Include="RecordForTestCase1.cs">
+      <BoundTo>2b214c53-c7f8-4dcb-bbe3-de5e48b43b95</BoundTo>
+      <DependentUpon>RecordForTestCase1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3d931f96-32da-454a-b4f5-5d930ce65109</id>
+    </Compile>
+    <Compile Include="RecordForTestCase1.UserCode.cs">
+      <BoundTo>2b214c53-c7f8-4dcb-bbe3-de5e48b43b95</BoundTo>
+      <DependentUpon>RecordForTestCase1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c5ec1a10-2f40-4746-bd64-a51c94c454f8</id>
+    </Compile>
+    <Compile Include="SkyTestSuiteRepository.cs">
+      <BoundTo>3a9e1326-6bf7-47c7-90f1-453457037cd1</BoundTo>
+      <DependentUpon>SkyTestSuiteRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>95bb2e01-bcf7-46c4-af7b-09e7b5cc327c</id>
+    </Compile>
+    <Compile Include="Test002_popup_notifycation.cs">
+      <BoundTo>5b252efe-7aca-4007-b223-bfd7a05ba9d6</BoundTo>
+      <DependentUpon>Test002_popup_notifycation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1a96a997-d501-4d89-820e-76f02c4f4f1e</id>
+    </Compile>
+    <Compile Include="Test002_popup_notifycation.UserCode.cs">
+      <BoundTo>5b252efe-7aca-4007-b223-bfd7a05ba9d6</BoundTo>
+      <DependentUpon>Test002_popup_notifycation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0711ed2f-dac5-44c0-8ae7-08fc3715fbc5</id>
+    </Compile>
+    <Compile Include="Test003_login.cs">
+      <BoundTo>0be4f95a-debb-4f88-ba64-30767be700cf</BoundTo>
+      <DependentUpon>Test003_login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>401b2db1-47a9-4622-8c80-1e82c7e56c92</id>
+    </Compile>
+    <Compile Include="Test003_login.UserCode.cs">
+      <BoundTo>0be4f95a-debb-4f88-ba64-30767be700cf</BoundTo>
+      <DependentUpon>Test003_login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2dd0d131-0c47-4f2f-b68f-abecd9014d9e</id>
+    </Compile>
+    <None Include="app.config">
+      <id>93d0266a-aab3-4d14-87e8-310af0527fe4</id>
+    </None>
+    <None Include="Test001_insttall_apk.rxrec">
+      <BoundTo>3a9e1326-6bf7-47c7-90f1-453457037cd1</BoundTo>
+      <id>54e36f21-6f59-453f-bff5-050c36c78b97</id>
+      <recordtableid>b7c8d521-df31-43d7-95c8-c42a5ec1a8ee</recordtableid>
+    </None>
+    <None Include="RecordForTestCase1.rxrec">
+      <BoundTo>3a9e1326-6bf7-47c7-90f1-453457037cd1</BoundTo>
+      <id>2b214c53-c7f8-4dcb-bbe3-de5e48b43b95</id>
+      <recordtableid>25f48f15-aca8-405a-b8ba-d22670b787c2</recordtableid>
+    </None>
+    <None Include="SkyTestSuiteRepository.rximg">
+      <BoundTo>3a9e1326-6bf7-47c7-90f1-453457037cd1</BoundTo>
+      <DependentUpon>SkyTestSuiteRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>b1fd6df4-f8a8-4d69-ab69-f0a37dbdb3bd</id>
+    </None>
+    <None Include="SkyTestSuiteRepository.rxrep">
+      <id>3a9e1326-6bf7-47c7-90f1-453457037cd1</id>
+      <repoid>cd779c9c-f72c-4fcc-a01e-8f144bc6bc9c</repoid>
+      <reporootid>09ad0020-c27d-478a-a523-fec26dcd45f2</reporootid>
+    </None>
+    <None Include="Test002_popup_notifycation.rxrec">
+      <BoundTo>3a9e1326-6bf7-47c7-90f1-453457037cd1</BoundTo>
+      <id>5b252efe-7aca-4007-b223-bfd7a05ba9d6</id>
+      <recordtableid>71a72134-a2aa-488b-aec0-7c305e8246d6</recordtableid>
+    </None>
+    <None Include="Test003_login.rxrec">
+      <BoundTo>3a9e1326-6bf7-47c7-90f1-453457037cd1</BoundTo>
+      <id>0be4f95a-debb-4f88-ba64-30767be700cf</id>
+      <recordtableid>781c5916-2f50-470d-af0a-5b9e8a9072d4</recordtableid>
+    </None>
+    <Content Include="SkyTestSuite.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>a50c2b04-13b5-47ba-988c-7a70d00e9267</id>
+    </Content>
+    <Content Include="SkyTestSuite.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>7785db01-eed4-4305-8fa5-58e2d8c4db9f</id>
+    </Content>
+  </ItemGroup>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>

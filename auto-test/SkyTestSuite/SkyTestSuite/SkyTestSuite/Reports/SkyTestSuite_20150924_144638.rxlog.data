@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report>
+	<activity
+		result="Failed"
+		duration="4.4m"
+		durationms="266574"
+		type="root"
+		rid="1523d17ade06c580"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="1"
+		totalblockedcount="0"
+		user="tv"
+		host="TV-PC"
+		rxversion="5.4.2.25689"
+		osversion="Windows 7 32bit"
+		runtimeversion="4.0.30319.17929"
+		procarch="32bit"
+		language="en-US"
+		screenresolution="1366x768"
+		timestamp="9/24/2015 2:46:38 PM"
+		timestampiso="2015-09-24T07:46:38"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="4.4m"
+			durationms="266002"
+			type="test suite"
+			rid="64f4de51e03c0ea"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="1"
+			totalblockedcount="0"
+			testsuitename="SkyTestSuite"
+			runconfigname="TestRun"
+			runlabel=""
+			maxchildren="3">
+			<params/>
+			<detail>
+			</detail>
+			<activity
+				result="Failed"
+				duration="4.4m"
+				durationms="265974"
+				type="test case"
+				rid="14b5b632665a43f4"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				testcasename="TestCase"
+				testcaseid="d97fae0a-9662-4ddc-8de0-2ab733a97c45"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+					result="Failed"
+					duration="4.4m"
+					durationms="265948"
+					type="test module"
+					rid="aedee08c8629746"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="RecordForTestCase"
+					moduleid="b7c8d521-df31-43d7-95c8-c42a5ec1a8ee"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.633"
+						timeRelativeToTestModuleStartTime="00:00.007"
+						timeWallClock="14:46:39"
+						time="00:00.633"
+						level="Info"
+						category="Application">
+						<message>
+							Deploying android app 'C:\Users\tv\Desktop\test\Sky.apk' to device 'USB-0123456789ABCDEF'.
+						</message>
+						<metainfo
+							itemindex="0"
+							codefile="c:\Users\tv\Desktop\SkyTestSuite\SkyTestSuite\SkyTestSuite\RecordForTestCase.cs"
+							codeline="82"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="04:26.574"
+						timeRelativeToTestModuleStartTime="04:25.948"
+						timeWallClock="14:51:05"
+						time="04:26.574"
+						level="Error"
+						category="Module">
+						<message>
+							Test run was aborted by the user.
+						</message>
+						<metainfo
+							loglvl="Error"/>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

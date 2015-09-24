@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="5.4.2.25689"
+id="781c5916-2f50-470d-af0a-5b9e8a9072d4"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		Test003_login
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Test003_login"
+	namespace="SkyTestSuite"/>
+	<variables/>
+	<recorditems>
+		<runmobileapprecorditem
+		enabled="True"
+		optional="False"
+		duration="3500ms"
+		application="com.SkyPremiumLtd.SkyPremium"
+		devicename="USB-0123456789ABCDEF"
+		resetInitialState="True">
+			<comment/>
+			<bindings/>
+		</runmobileapprecorditem>
+		<touchrecorditem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="17b73278-9561-4787-b904-69427f77ddc0"
+		imagerect="0,0,268,59"
+		touchtype="Touch"
+		elementlocation="66;45"
+		fingerid="0"
+		touchduration="100ms"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		isremote="True"
+		sx="66"
+		sy="45">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="RemoteRecorder"
+			id="d4c3a82e-07eb-4bc5-a39d-cd7544ca1712">
+				<element
+				role="text"
+				prefcap="text"
+				capabilities="androidelement, mobileuielement"
+				flavor="mobile"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="True"
+				index="0"
+				rect="91,182,268,59"
+				snapElem="">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						login
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						org.com.atmarkcafe.sky.customviews.charting.MEditText
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						1101271232
+					</attribute>
+				</element>
+				<path>
+					/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='RootActivity']/container[@rid='content']/container[@rid='root']/?/?/container[@rid='parent_id']/?/?/container[@rid='loginmain']//text[@rid='login']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="72dc325d-f045-4471-8fb3-f422d0c8ef5a">
+				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
+RU5ErkJggg==
+			</helperscreenshot>
+		</touchrecorditem>
+		<setvaluerecorditem
+		enabled="True"
+		optional="False"
+		duration="100ms"
+		searchpropertyid="38281783-1476-41a5-9f72-2bd59b9ab2ab"
+		attrname="Text">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="RemoteRecorder"
+			id="d4c3a82e-07eb-4bc5-a39d-cd7544ca1712">
+				<element
+				role="text"
+				prefcap="text"
+				capabilities="androidelement, mobileuielement"
+				flavor="mobile"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="True"
+				index="0"
+				rect="91,182,241,59"
+				snapElem="">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						10
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						011140417B
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						login
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						org.com.atmarkcafe.sky.customviews.charting.MEditText
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						1101271232
+					</attribute>
+				</element>
+				<path>
+					/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='RootActivity']/container[@rid='content']/container[@rid='root']/?/?/container[@rid='parent_id']/?/?/container[@rid='loginmain']//text[@rid='login']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="6196be60-983e-4621-a1c0-46a5751d7dac">
+				iVBORw0KGgoAAAANSUhEUgAAAPEAAAA7CAYAAACquGzbAAAABHNCSVQICAgIfAhkiAAAAAFzUkdC
+AK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAFFElEQVR4Xu2bQcgWRRzGTdM0KqWUsITCUszQi4eyNAlC
+KunQxQ4RghGeDKKDIB4Sukhdojpo0FGCoKCT0EWlIJEIBDvUQSgKlAqCosSongdmYVln951513l5
+v93fwMP3vvvO/Hf/v5lnZ3d2v0WLKBCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCA
+AAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAIESBP4rEZSYEIDA7Ahg4tmxZk8Q
+KEIAExfBSlAIzI4AJp4da/YEgSIEMHERrASFwOwIYOLZsWZPEChCABMXwUpQCMyOACaeHWv2BIEi
+BDBxEawLP+hNSuFWafHCT+W6DBZCbnfpqB+O6CFtWyfdXMsKEw9wkPZJaYUaH5P+lP6QrkrHpZUT
+gnpwXUrccam63v1m6V/pvsixTJvbpLj1XXXl9rkqnp4gn2BcXpf+ki429F3ok7/194jk+pg4ceCN
+oZrP7l9LJ2qm9cB/IxjUM3NbeTvUSeFUqu4y7dyD/B+paeI+uXXFbebbldujqry9Re9p+5laMJvY
+po8VG/dxySfZQ5g4ZciNp84+pfqVVM0G9cxP6svR2gbX2SY9J30YBlLbTFyqbrNn3tGG16QrERPn
+5JYTNye3tpF0v374RqqfJLtMXMU5oA+/YeLxGDQl03Oq9GxLxS1hwFQG972yL+cqfaTPbSYuVbd+
+qE/oy5eS9xUzcU5uOXFzcouhXa6N30ZOOikm9qx+DROnDO1x1LklDAYvqMTKEm30veY9Lb/v7DBx
+s8mNrnu7dvCjtDbsqGniaXObFDeGIic3t/9AeiUSKMXEvur4DBOPw6ApWfoe0iaNXUpX7b/Xh8fm
+0MQf65herB1X08TT5jYpbl8Tm6WZ+gTZLJWJ3R91eeZfJe2XfggnLha2Ukb4COr4ccbvE/L0/fLT
+c2bivWE2qp98miaeJreUuH1MbDN6Ee6pFp42sc3Zpp/02yOhLSYegUFTUtyqSl4k6Sq+59wzRya+
+W8fiwdx8/NU0cW5uqXH7mNgLghektisfm/gLaVVDd+r7BuklybcQh4PRU/qYOgMn8KDy86OZruIF
+mF1zYmLPZGel3ZHjaZo4J7ecuH1M7KsaG7GtpNwT3xv6jJl44OZMTe+OcEb331jxjOGV0AfmxMRP
+6jh+lV6NyC+qvBW2r9HfnNxy4k5rYs/0Nt7qniZ28/MhVmo/U2/gBHx5tqMlx/Xa7re3ls6Jif3q
+oVd1Y7KJ3wy/VUZJzS03bhNHyur0C2rkq5qukjITu73f6GImHrgxc9Lz/dWnLQ38KqZf6mgrKYO3
+aluqbhU/9py4T25dcacx8btqZPU1se+Nq4WvnH6m7oAJ3KbcfpYOSvUFl+f13a/4Vc9hYwhKGTMn
+bpfZ+uR2o03sF09eTjCxFxL93L4u3x5sknwF8ov0fjDygIclqeUS8GKJV0Vt5lOS38LyJZtf7O8q
+OWYrVXeS2abNbVLcOpeU3PwU4JkEE8ceL/lZ/mXpE8kr3PwDRO4IH1F9n/03Sl6EGVoZWm7cEw9t
+hJLP6Ahg4tF1OQkPjQAmHlqPks/oCGDi0XU5CQ+NACYeWo+Sz+gIYOLRdTkJD40AJh5aj5IPBCAA
+AQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAAEI
+QAACEIAABCAAgSIE/gcSikDtexE7YAAAAABJRU5ErkJggg==
+			</helperscreenshot>
+			<AttributeValue>
+				011140417B
+			</AttributeValue>
+		</setvaluerecorditem>
+		<touchrecorditem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="a8914b4c-d96c-4a72-86f1-aa0418f9d4e3"
+		imagerect="0,0,268,59"
+		touchtype="Touch"
+		elementlocation="65;46"
+		fingerid="0"
+		touchduration="100ms"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		isremote="True"
+		sx="65"
+		sy="46">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="RemoteRecorder"
+			id="7852e353-6d5d-4f0b-b2cd-32e13c94ea6d">
+				<element
+				role="text"
+				prefcap="text"
+				capabilities="androidelement, mobileuielement"
+				flavor="mobile"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="True"
+				index="0"
+				rect="91,242,268,59"
+				snapElem="">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						password
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						org.com.atmarkcafe.sky.customviews.charting.MEditText
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						1101272128
+					</attribute>
+				</element>
+				<path>
+					/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='RootActivity']/container[@rid='content']/container[@rid='root']/?/?/container[@rid='parent_id']/?/?/container[@rid='loginmain']//text[@rid='password']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="e57e9e30-ca65-4008-8309-e48a4c05688b">
+				iVBORw0KGgoAAAANSUhEUgAAAQwAAAA7CAYAAACOhLQyAAAABHNCSVQICAgIfAhkiAAAAAFzUkdC
+AK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAHMElEQVR4Xu2cbWhWZRjH/RIEEUFIEUJEERhGUSMj60NQ
+jYQcZOzD1AyLShSJhkhvEGUShYSxoVFEGfWhkDKScu19bYNgiSBsLMqZpYlWKlnLzK3/f9xn3B7P
+9jzbM3l2Hn6Di3PO/X7/nnP9z3Xu+7A5c/iDAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAA
+AhCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQAACEIBAuQiMlqtj+oUA
+BPJHAMHI32/GiCFQNgIIRtnQ0zEE8kcAwcjfb8aIIVA2AghG2dDTMQTyRwDByN9vxoghUDYCCEbZ
+0NMxBPJHAMHI32/GiCFQNgIIRtnQ0zEE8kdgtL29/V7Zk2lra2t7orW1tbalpeXK/E2rPCMWr8c7
+OztvKE/v9AqBC09gVDf5JxKHMzoeiU1px2Qjsr+V3nDhh5L/HsTprIU3/zNhBhDIJjAmGLLBrGxH
+F8rbJtFwuVeAODkBBIM7pNIJTCoYyeTlCF/LDlQ6jFLnh2CUSpD6s51AUYKhCGOTnSGeTFNT0yVK
+W6+87Tp+qmOjwvG70hNW2o3K36z8HTp+oOu1WVAKlVP9lSpzf7qu0quU/lR3d/fV6Tz1VydbEqf7
+WvaO6n0ue191l2e0ubKjo+M2p+t4h8q8qLJ3JuVcx3NR2k4dtygSu8l5CMZsv90ZX6kEihWMRq9l
+JJ3JQa6Vc/yotP12Or+2yDplp2XrknLKq5cNy9plW8Prz0mdf9PX13fRVMpZlGR7MkTBjjsqezbO
+k1NfrPIn41cpO7nHqLK7dGwIbZ7S9W4JzqVRRDWo+s+Hef2n4yFdr/CYg0h4nl9YJH2U/W5BQzBK
+vR2pP9sJFBSMnp6eK+QIB2Q9kYPvkIPsc5QRT1Bpb8t+jsp54bQx9YRfqLQ/1d4zUymn8qtU74zF
+KtXnD0ofkjWl+nF0cVbpC5yu40sWPVlNqtwipf0hezcWDLen+oM63hOlb1TaXxKPB1JtVKucxzHC
+oudsv+UZXykEEsH4JWNrda2cY7PsJzu4HPW+yMG7lfZcxtP+4eA0c0OI7qd5fbqchUXtbowcsWC5
+8Ark6GRDVO9Wi4jaWi07EUctjiaUt9dlQ2RwVGnvZcFSuU2yYTG4Jox70NFJeovUYuioI6sNt618
+b1OzS1LKHUndWU1gwm1VOcARPzVD2L6o0CzkXLeovCMPt3ldeKp36/w3i4uO8yZqQ/nFltsVRxKO
+GtTuHouJRU32UCRqQxa8IACLgzOft8bifDn53BCNrIkE47N4vKpfFeZWPYFgOMpAMArdKOTnmkDB
+V5Ks2fl93+/4cpAWv67o6FD/oMxrFeOC4Se2rj/y0z9EAv06fphevCy2nOqu8ZM/eRXSdYeutwRx
+anHk4nMvVOp8RHkLgwCsdv9e15hEtA6r/KuRYJzz7YnFyHPr6uq6KqsNb0EjGLn2BQZfBIEpC4bD
+eznWd3KOw7LXdb64ubn5suC0S2PBSPoPrxNLXF62V3W8kLg+Pb5C5Xp7ey8PawjLLVo6P5W8KoVF
+yv4wjtfUz0DSvvIes4BM9tWq8o/LXk4EQ+dvpiKMmqy5RX3MRzCKuOMokmsCUxYMOWmdHUM2vs2Y
+EFCeFybHIgw/3b3dmUXHUYbyDwXnLKpc0o7qNocoZYWOvybpXm8IUcR8tf2tzscXW3WevE7UZo0n
+vE553HUTCUaIgkbU1rKsNryLgmDk2hcYfBEEpiMY6+RYp7PCeznMzkgwxtYNZDenx6G0DW4jOGdR
+5SLBqA+vQWPff8Rt67pf5p0Mj+/uVISwT/12TCBgH6vOkeRVR+feHTknwghjdWS1O6sN1VEWaxhF
+3HMUyTGB6QiGt0W9M7Et2ZXwe73Sttshg0g86u1YnQ/I+pIPm8zJ6wuq+72s09dhB6NguYSx+1Ld
+f2T+9mFskTISk7eU7kXWofRvovQHLSTK25p8cxH69nar1zfGPyibRDBqw9wbEnGxcCrtjTDXo+yS
+5NgbGHpBAlMWjPCkfUEO4l2JY3Iuf8A1rOOXYbehV9f/6tprFrdbMHwt2+/IIDjtV3oNuD5y9KLK
+JeUtNm4nvSahPmqCYI1/U5GKQLzte1B1vT07EETH34o8nSqXGWG4jEUqzPtEEJbjOvYobYGjFASj
+4D1HgRwTmPb/w5BzzJOTLA3v7ue9dqQc0N9LLHP59IdX0ylXKm+NvVq2yh9gTbZzMlE/rmNB1PER
+zamq1PFQHwJ5ITBtwcjLBBknBCAwcwQQjJljSUsQqHgCCEbF/8RMEAIzRwDBmDmWtASBiieAYFT8
+T8wEITBzBBCMmWNJSxCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQAAC
+EIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQAACEIAABCqYwP8IPW1hhK0piQAAAABJRU5E
+rkJggg==
+			</helperscreenshot>
+		</touchrecorditem>
+		<setvaluerecorditem
+		enabled="True"
+		optional="False"
+		duration="100ms"
+		searchpropertyid="901b0b3f-0f91-45c2-a5df-009804938b1b"
+		attrname="Text">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="RemoteRecorder"
+			id="7852e353-6d5d-4f0b-b2cd-32e13c94ea6d">
+				<element
+				role="text"
+				prefcap="text"
+				capabilities="androidelement, mobileuielement"
+				flavor="mobile"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="True"
+				index="0"
+				rect="91,242,241,59"
+				snapElem="">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						8
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						1234567a
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						password
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						org.com.atmarkcafe.sky.customviews.charting.MEditText
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						1101272128
+					</attribute>
+				</element>
+				<path>
+					/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='RootActivity']/container[@rid='content']/container[@rid='root']/?/?/container[@rid='parent_id']/?/?/container[@rid='loginmain']//text[@rid='password']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="9c805a96-ffd2-48c2-90b8-06d4529e895c">
+				iVBORw0KGgoAAAANSUhEUgAAAPEAAAA7CAYAAACquGzbAAAABHNCSVQICAgIfAhkiAAAAAFzUkdC
+AK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAACrklEQVR4Xu3asauNcRgH8IsMpCxSyiDqLiwmCxZWu0Js
+7mCWwagMMohFdqu/gUHJZPQfWJSkKIrvr95Tb6dz7O/zfN566tzTO7zfz/N+7znnnruz4yBAgAAB
+AgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgACBmgJ/
+a8aSikAfASXus2tJiwoocdHFitVHQIn77FrSogJKXHSxYvURUOI+u5a0qIASF12sWH0ElLjPriUt
+KqDERRcrVh8BJe6za0mLCihx0cWK1UdAifvsWtKiAkpcdLFLjnUxF/9kmvF429HpvH1BuJDZyzzI
+XM8cnWCUeMl3e8Frf5xM46acz3hu/eh03sGEf5t5l7mbuZl5kfmROT9ZFbwVRFqiwNkNBV6V+dws
+ULfz7if7m8x4NZ4ft/PDRyVe4q1e95rHW8X1V+HVz/dmsbud9zLZN32sOJPn/yhx3UIsMdmt/5T4
+zixQt/M27fJwnhyv0Ktfckvct2suKHAsmX5vKPJ47vgsb7fzxtvoS5mnmfeZr5kPmWdKXLAFBSJd
+TYZfs5vzZx6P59aPTue9TvhPmWvTL7PVZ+OTSlzgji8a4UhyXZlmPN52dDjv1FTU1ddJc4tdJS7a
+ALFKCYyvkL5vSfRQiUvtWpiiAuPdxvh4cWOW70Aej7/QP5+VeP3rp6IcYhFYpsDlXPaXzOfM+KeP
+b5lHmf2ZV1ORTywzmqsm0EdgvPqOP2Sdzhxai+3fLvvcB5IWFVDioosVq4+AEvfZtaRFBZS46GLF
+6iOgxH12LWlRASUuulix+ggocZ9dS0qAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQ
+IECAAAECBAgQIECAAAECBAgQIECAAIEFC/wDitRG0RhwgskAAAAASUVORK5CYII=
+			</helperscreenshot>
+			<AttributeValue>
+				1234567a
+			</AttributeValue>
+		</setvaluerecorditem>
+		<touchrecorditem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="75f77e9f-b27a-4b71-8fdf-b7598f1e8651"
+		imagerect="23,203,298,63"
+		touchtype="Touch"
+		elementlocation="113;48"
+		fingerid="0"
+		touchduration="100ms"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		isremote="True"
+		sx="113"
+		sy="48">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="RemoteRecorder"
+			id="0cab3d7a-1485-4b19-8a34-e1fd7e5da4c9">
+				<element
+				role="text"
+				prefcap="text"
+				capabilities="androidelement, mobileuielement"
+				flavor="mobile"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="True"
+				index="2"
+				rect="91,378,298,63"
+				snapElem="">
+					<attribute
+					name="text"
+					type="System.String">
+						SIGN IN
+					</attribute>
+					<attribute
+					name="resourceid"
+					type="System.String">
+						R.string.msg_sign_in
+					</attribute>
+					<attribute
+					name="rid"
+					type="System.String">
+						btnlogin
+					</attribute>
+					<attribute
+					name="platformclass"
+					type="System.String">
+						org.com.atmarkcafe.sky.customviews.charting.MTextView
+					</attribute>
+					<attribute
+					name="temporaryelementid"
+					type="System.Int32">
+						1101279768
+					</attribute>
+				</element>
+				<path>
+					/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='RootActivity']/container[@rid='content']//container[@rid='loginmain']/text[@resourceid='R.string.msg_sign_in']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="f866b807-dd64-4367-9ec7-95c6f5dfed75">
+				iVBORw0KGgoAAAANSUhEUgAAASoAAAA/CAIAAADYNBLkAAAAA3NCSVQICAjb4U/gAAAAAXNSR0IA
+rs4c6QAAAARnQU1BAACxjwv8YQUAAAUbSURBVHhe7Zp7U9tGFEfz/b9CO22nTV/TaZNOk5QWQlLA
+tSHl5VAC2HESPwYw5mFjjDFY7c8s1bgypcIRe5WZ49Ef9nq1qzm7515pV/dmHn/EAQEImBC4Z9Ir
+nUIAAiKAfiR/CJgRQD8z9IR/CKAf+kHAjAD6maEn9kMA/dAPAmYE0M8MPbEfAuiHfhAwI4B+ZuiJ
+/RBAP/SDgBkB9DNDT+yHAPqhHwTMCKCfGXpiPwTQD/0gYEYA/czQE/shgH7oBwEzAuhnhp7YDwH0
+Qz8ImBFAPzP0xH4IoB/6QcCMAPqZoSf2QwD90A8CZgTQzww9sR8C6Id+EDAjgH5m6In9EEA/T/ot
+zT3Y237T7bT6/Yvz87Pmwc7myvNw/u1UNjvto+PmXlgy++Tjd1uLJ8eHqq5TTjst1Zmf/jqscNio
+6ZR2s5Gbuh8WZifvq1BHubgyOrkjvYzRAsIkSwD9fOi3vjglhf4a+ZSLy244D/eq+vPivOd+zv78
+yVGjNlq/2zlemP7G1ZHJrsJOdSucE/NPv7oqrGyOTpRIL2O0kOzkozX086GfktjArovexvL03MSn
+q7lHSlAqCfr9hWcDnSJiVEt5Z9F+vbyceag61dJLV7Jd3ojoFwTBavaRKxxPv/gtIEyyBNDPh37B
+ZeqTY+HgFV7OKR/qkJCj+p11T1Rf2UlpMDzFORzeoIa5S4Wto/r76Be/hWQnH62hnw/9uqdtTfHz
+Xjc//+TaOTec/ZTrRu8qddbS7A/53OPlzI/D2a/X7Sh3qf7rP7PjZb9btYAwyRJAPx/6vdlYuHqQ
+C4Kj/e3iWiYz8dnwQA7rJ8Fc5crr1RsG22W/dnN/t1rQF1mkdZcxbj5v1UKyk4/W0M+HfppnhbU5
+lwPdR4ufWpzU8qabgsP6rfxbv+zkF1omDQ/ZO5z9JE9u6sve2anaHCyN3n7p5VYtIEyyBNDPk34a
+Nj3IbeVnDurlcBVUS/+j+kWyX2jUP+YGEf30s/RqXv8GQX/txcTVjWvslU/pF7+FZCcfraGfP/3C
+2abNA2Uz58mrpaeR7PfHb9+5v9wipzLk4sz3Og7qlcvia/RTteNmY3Av2tofT7+YLSBMsgTQ7871
+W1+cVF7SUVrPhYOnnUDnybvCYOtv+OZTvmmR5vK5rjE82I2dtzfop0UdtwYztn5xWkh28tEa+t25
+frp7lHuy4qR14Hb5dCizOU+0AxHRTz93q1vu30op7+r//uvnrcPdG/QbnFUrvo9+cVpAmGQJoN+d
+66cBq71dc2Loqa/TbmqV0v3U5nvml8ESaGTbXe+RuX15fbRIo1P06pn7qbvW0Wc/VyLPXdrUR8sw
+oxPl2rde3LNfzBaSnXy0hn4+9NM8053n6UkzzE7SabdWCJNhRAzV13pmvVbUizLhKXrjTFsRemnm
+v/RTebjDMZ5+/9sCwiRLAP086eeG7cXzb/WIpXWUmKM4eEMt+5N223VizFOo9gERQD+v+n1AM4NL
+9UAA/dAPAmYE0M8MvYfgShcpJ4B+6AcBMwLoZ4Y+5YGZy/NAAP3QDwJmBNDPDL2H4EoXKSeAfugH
+ATMC6GeGPuWBmcvzQAD90A8CZgTQzwy9h+BKFykngH7oBwEzAuhnhj7lgZnL80AA/dAPAmYE0M8M
+vYfgShcpJ4B+6AcBMwLoZ4Y+5YGZy/NAAP3QDwJmBNDPDL2H4EoXKSeAfugHATMC6GeGPuWBmcvz
+QAD90A8CZgTQzwy9h+BKFykn8Dcy0U+26mdi5QAAAABJRU5ErkJggg==
+			</helperscreenshot>
+		</touchrecorditem>
+	</recorditems>
+	<repository
+	name="SkyTestSuiteRepository"
+	id="cd779c9c-f72c-4fcc-a01e-8f144bc6bc9c"
+	rxversion="5.4.2.25689"
+	relativepath="SkyTestSuiteRepository.rxrep">
+		<codegen
+		classname="Test1Repository"
+		namespace="SkyTestSuite"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="09ad0020-c27d-478a-a523-fec26dcd45f2"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Test003_login.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

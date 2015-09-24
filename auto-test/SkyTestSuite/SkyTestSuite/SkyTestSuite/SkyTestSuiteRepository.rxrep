@@ -1,0 +1,117 @@
+﻿<repository
+name="SkyTestSuiteRepository"
+id="cd779c9c-f72c-4fcc-a01e-8f144bc6bc9c"
+rxversion="5.4.2.25689">
+	<codegen
+	classname="Test1Repository"
+	namespace="SkyTestSuite"/>
+	<rootfolder
+	name="Root"
+	id="09ad0020-c27d-478a-a523-fec26dcd45f2"
+	searchtimeout="0ms"
+	capname="host"
+	isrooted="True"
+	usecache="False">
+		<appfolder
+		name="ComSkyPremiumLtdSkyPremium"
+		id="189902cb-117e-4654-b17d-12cb1665a0c1"
+		searchtimeout="30000ms"
+		capname="mobileapp"
+		refpath="/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']"
+		addcaps="unknown,mobileapp,androidapp"
+		isrooted="True"
+		usecache="False">
+			<item
+			name="RStringMsgPushConfirmNo"
+			id="891f8e83-ff4b-4c72-976d-453c316f8964"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='(none)']/container[@rid='content']/container[@rid='dialog_main']/container[@containertype='Linear']/container[2]/text[@resourceid='R.string.msg_push_confirm_no']"
+			addcaps="text,androidelement,mobileuielement"
+			refimgid="7a51328d-6272-4050-b081-15fd10dd94a6">
+				/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='(none)']/container[@rid='content']//text[@resourceid='R.string.msg_push_confirm_no']
+			</item>
+			<folder
+			name="Content"
+			id="784cba61-6670-4daf-b83f-6c1c852eacce"
+			searchtimeout="30000ms"
+			capname="container"
+			refpath="/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='RootActivity']/container[@rid='content']"
+			addcaps="container,androidelement,mobileuielement"
+			isrooted="True"
+			usecache="False">
+				<item
+				name="RStringMsgSignIn"
+				id="0cab3d7a-1485-4b19-8a34-e1fd7e5da4c9"
+				searchtimeout="30000ms"
+				capname="text"
+				refpath="/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='RootActivity']/container[@rid='content']/container[@rid='root']/androidelement/container[@rid='parent_id']/container[@containertype='Relative']/container[@rid='loginmain']/text[@resourceid='R.string.msg_sign_in']"
+				addcaps="text,androidelement,mobileuielement"
+				refimgid="78550f03-8751-4a1a-ac80-94ac3db06d70">
+					/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='RootActivity']/container[@rid='content']//container[@rid='loginmain']/text[@resourceid='R.string.msg_sign_in']
+				</item>
+				<item
+				name="Login"
+				id="d4c3a82e-07eb-4bc5-a39d-cd7544ca1712"
+				searchtimeout="30000ms"
+				capname="text"
+				refpath="/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='RootActivity']/container[@rid='content']/container[@rid='root']/androidelement/container[@rid='parent_id']/container[@containertype='Relative']/container[@rid='loginmain']/container[1]/container[@containertype='Linear']/container[1]/text[@rid='login']"
+				addcaps="text,androidelement,mobileuielement"
+				refimgid="69984d0b-8a77-44ac-b506-541c309f7ab0">
+					/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='RootActivity']/container[@rid='content']/container[@rid='root']/?/?/container[@rid='parent_id']/?/?/container[@rid='loginmain']//text[@rid='login']
+				</item>
+				<item
+				name="Password"
+				id="7852e353-6d5d-4f0b-b2cd-32e13c94ea6d"
+				searchtimeout="30000ms"
+				capname="text"
+				refpath="/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='RootActivity']/container[@rid='content']/container[@rid='root']/androidelement/container[@rid='parent_id']/container[@containertype='Relative']/container[@rid='loginmain']/container[1]/container[@containertype='Linear']/container[2]/text[@rid='password']"
+				addcaps="text,androidelement,mobileuielement"
+				refimgid="50c4f006-07be-44fe-8d7b-883146cf2f92">
+					/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='RootActivity']/container[@rid='content']/container[@rid='root']/?/?/container[@rid='parent_id']/?/?/container[@rid='loginmain']//text[@rid='password']
+				</item>
+				<basepath>
+					/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='RootActivity']/container[@rid='content']
+				</basepath>
+			</folder>
+			<item
+			name="SkyMainActivity"
+			id="2b345434-d6e3-4bfd-be84-6b71890264c8"
+			searchtimeout="30000ms"
+			capname="form"
+			refpath="/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='SkyMainActivity']"
+			addcaps="form,mobileform,mobileuielement">
+				/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='SkyMainActivity']
+			</item>
+			<item
+			name="Linear"
+			id="206b831c-e3d7-4d0f-882b-d3c8ee529a67"
+			searchtimeout="30000ms"
+			capname="container"
+			refpath="/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='SkyMainActivity']/container[@rid='content']/container[@containertype='Linear']/container[@rid='content_frame']/androidelement/container[@containertype='Relative']/container[@containertype='Linear']/container[@containertype='Relative']/list[@rid='list']/container[1]/container[@containertype='Linear']/container[@containertype='Relative']/container[@containertype='Linear']"
+			addcaps="container,androidelement,mobileuielement"
+			refimgid="2ee1a488-7dec-4990-b4cf-49c23d2abef8">
+				/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']/form[@title='SkyMainActivity']/container[@rid='content']/?/?/container[@rid='content_frame']//container[@containertype='Linear']/container[@containertype='Relative']/list[@rid='list']/container[1]/?/?/container[@containertype='Relative']/container[@containertype='Linear']
+			</item>
+			<basepath>
+				/mobileapp[@title='com.SkyPremiumLtd.SkyPremium']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAB/ElEQVQ4T32Tu6sa
+QRSHbVMFbps/IFYiBG0iIsGgjWBQQQVBiUQCAdsIClpIAhZik/SKWIukCkGvSNKqmGAliLjq6vpa
+3wq/zJnrhltkLQ5ndma+b157NAA0Wq1WQzmZTL5MpVJfM5nM93w+/6dcLou5XO7IxnENkeUnNF9h
+OHjtuGPgodPpQIlmswmLxaLASn6tJnjBVv8Hk4StziGDwQCn0wmfz0ffATXB81gshl6vh+FwCFEU
+0Wg00O12IYwEjMdjVCoVEnxQEzyNRqOQZRnH4xG73Q6CIGA0GmEymWA6naJer5Pg438FdBeRSOS8
+Wq1wOp2wXC75qrST2WwGSZLQarVI8ElVEA6HJ/PFnAukucRXJZD6SNjv90nwRVUQDAZ/E3A+nx/A
++QNIu6KjUZvBRVWB1+u9py0fDgcsFgsOrtdrbDYbfif7/R5Go/GbqsDhcJTo3DSZQHkjY7vdcpCk
+dDSbzfZLVWA2mz/TE5KAQMoE0qvQsS6XC9guu6oCNvB+MBig3W6jWq2iWCyC/Z2Ix+NwuVywWq10
+B71bgje1Wg06nQ4ej4fnRCLB24VCAYFAgATSLYExm80iFArxX9pkMqFUKsHv9yOdTsNut5Pgxy3B
+ndvtlvV6PSgeVSG1qRJ/stCrCq6V+YxNeMviHYtXBFD/o6pVqpf3/QVYAkX265rKhAAAAABJRU5E
+rkJggg==
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

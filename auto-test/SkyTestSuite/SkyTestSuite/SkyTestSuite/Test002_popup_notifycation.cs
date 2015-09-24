@@ -92,8 +92,8 @@ namespace SkyTestSuite
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'com.SkyPremiumLtd.SkyPremium' on device '$deviceIDAndrroid'.", new RecordItemIndex(0));
-            Host.Local.RunMobileApp("$deviceIDAndrroid", "com.SkyPremiumLtd.SkyPremium", true);
+            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'com.SkyPremiumLtd.SkyPremium' on device 'USB-0123456789ABCDEF'.", new RecordItemIndex(0));
+            Host.Local.RunMobileApp("USB-0123456789ABCDEF", "com.SkyPremiumLtd.SkyPremium", true);
             Delay.Milliseconds(3500);
             
             Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComSkyPremiumLtdSkyPremium.RStringMsgPushConfirmNo' at 76;44", repo.ComSkyPremiumLtdSkyPremium.RStringMsgPushConfirmNoInfo, new RecordItemIndex(1));

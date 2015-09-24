@@ -92,8 +92,8 @@ namespace SkyTestSuite
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Deploying android app 'C:\\Users\\tv\\Desktop\\test\\Sky.apk' to device from variable '$deviceIDAndrroid'.", new RecordItemIndex(0));
-            Host.Local.InstrumentAndDeployAndroidApp(deviceIDAndrroid, "C:\\Users\\tv\\Desktop\\test\\Sky.apk", true, Host.DeploymentModes.Auto, 600000, new Ranorex.Core.Remoting.RecordItems.InstrumentApkOptions() { InstrumentationFlags = "", EnableWebTesting = true, TreeSimplification = true, FullImageComparison = true, RIdClass = "", KeyStore = "", KeyAlias = "", JdkBinPath = "", KeyStorePass = "", KeyPass = "" });
+            Report.Log(ReportLevel.Info, "Application", "Deploying android app 'C:\\Users\\tv\\Desktop\\test\\Sky.apk' to device 'USB-0123456789ABCDEF'.", new RecordItemIndex(0));
+            Host.Local.InstrumentAndDeployAndroidApp("USB-0123456789ABCDEF", "C:\\Users\\tv\\Desktop\\test\\Sky.apk", true, Host.DeploymentModes.Auto, 600000, new Ranorex.Core.Remoting.RecordItems.InstrumentApkOptions() { InstrumentationFlags = "", EnableWebTesting = true, TreeSimplification = true, FullImageComparison = true, RIdClass = "", KeyStore = "", KeyAlias = "", JdkBinPath = "", KeyStorePass = "", KeyPass = "" });
             Delay.Milliseconds(500);
             
         }

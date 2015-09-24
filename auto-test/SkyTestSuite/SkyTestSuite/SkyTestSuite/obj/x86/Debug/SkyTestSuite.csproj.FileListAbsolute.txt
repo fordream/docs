@@ -6,3 +6,11 @@ C:\Users\tv\Desktop\SkyTestSuite\SkyTestSuite\SkyTestSuite\bin\Debug\SkyTestSuit
 C:\Users\tv\Desktop\SkyTestSuite\SkyTestSuite\SkyTestSuite\bin\Debug\SkyTestSuite.pdb
 C:\Users\tv\Desktop\SkyTestSuite\SkyTestSuite\SkyTestSuite\obj\x86\Debug\SkyTestSuite.exe
 C:\Users\tv\Desktop\SkyTestSuite\SkyTestSuite\SkyTestSuite\obj\x86\Debug\SkyTestSuite.pdb
+C:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\bin\Debug\SkyTestSuite.rxtmg
+C:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\bin\Debug\SkyTestSuite.rxtst
+C:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\bin\Debug\SkyTestSuite.exe.config
+C:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\bin\Debug\SkyTestSuite.exe
+C:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\bin\Debug\SkyTestSuite.pdb
+C:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\obj\x86\Debug\SkyTestSuite.csprojResolveAssemblyReference.cache
+C:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\obj\x86\Debug\SkyTestSuite.exe
+C:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\obj\x86\Debug\SkyTestSuite.pdb

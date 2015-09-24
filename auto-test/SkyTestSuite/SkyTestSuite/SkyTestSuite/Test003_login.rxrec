@@ -32,7 +32,7 @@ mode="Global">
 		optional="False"
 		duration="3500ms"
 		application="com.SkyPremiumLtd.SkyPremium"
-		devicename="USB-0123456789ABCDEF"
+		devicename="$deviceIDAndrroid"
 		resetInitialState="True">
 			<comment/>
 			<bindings/>

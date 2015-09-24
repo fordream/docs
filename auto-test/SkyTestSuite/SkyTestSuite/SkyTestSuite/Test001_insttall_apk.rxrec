@@ -25,7 +25,13 @@ mode="Global">
 	<codegen
 	classname="Test001_insttall_apk"
 	namespace="SkyTestSuite"/>
-	<variables/>
+	<variables>
+		<var
+		name="deviceIDAndrroid"
+		id="8e35c22c-5bae-4406-b5a1-11878f47a23d">
+			USB-0123456789ABCDEF
+		</var>
+	</variables>
 	<recorditems>
 		<deployapkrecorditem
 		enabled="True"
@@ -36,7 +42,11 @@ mode="Global">
 		instrument="True"
 		timeout="600000ms">
 			<comment/>
-			<bindings/>
+			<bindings>
+				<binding
+				target="DeviceName"
+				variable="deviceIDAndrroid"/>
+			</bindings>
 			<InstrumentApkOptions
 			InstrumentationFlags=""
 			EnableWebTesting="True"

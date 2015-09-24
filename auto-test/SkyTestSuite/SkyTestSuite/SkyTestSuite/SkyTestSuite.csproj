@@ -72,18 +72,6 @@
       <UserCode>true</UserCode>
       <id>1dcdf417-fbae-47be-b459-3c1ff7e3801d</id>
     </Compile>
-    <Compile Include="RecordForTestCase1.cs">
-      <BoundTo>2b214c53-c7f8-4dcb-bbe3-de5e48b43b95</BoundTo>
-      <DependentUpon>RecordForTestCase1.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>3d931f96-32da-454a-b4f5-5d930ce65109</id>
-    </Compile>
-    <Compile Include="RecordForTestCase1.UserCode.cs">
-      <BoundTo>2b214c53-c7f8-4dcb-bbe3-de5e48b43b95</BoundTo>
-      <DependentUpon>RecordForTestCase1.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>c5ec1a10-2f40-4746-bd64-a51c94c454f8</id>
-    </Compile>
     <Compile Include="SkyTestSuiteRepository.cs">
       <BoundTo>3a9e1326-6bf7-47c7-90f1-453457037cd1</BoundTo>
       <DependentUpon>SkyTestSuiteRepository.rxrep</DependentUpon>
@@ -121,11 +109,6 @@
       <BoundTo>3a9e1326-6bf7-47c7-90f1-453457037cd1</BoundTo>
       <id>54e36f21-6f59-453f-bff5-050c36c78b97</id>
       <recordtableid>b7c8d521-df31-43d7-95c8-c42a5ec1a8ee</recordtableid>
-    </None>
-    <None Include="RecordForTestCase1.rxrec">
-      <BoundTo>3a9e1326-6bf7-47c7-90f1-453457037cd1</BoundTo>
-      <id>2b214c53-c7f8-4dcb-bbe3-de5e48b43b95</id>
-      <recordtableid>25f48f15-aca8-405a-b8ba-d22670b787c2</recordtableid>
     </None>
     <None Include="SkyTestSuiteRepository.rximg">
       <BoundTo>3a9e1326-6bf7-47c7-90f1-453457037cd1</BoundTo>

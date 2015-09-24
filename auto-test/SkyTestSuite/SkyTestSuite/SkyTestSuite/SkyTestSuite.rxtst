@@ -13,6 +13,11 @@ enabletracingscreenshots="True"
 TracingScreenshotMode="Foreground"
 TracingScreenshotQuality="40"
 reportlevel="Info;20">
+	<parameters>
+		<param
+		name="deviceIDOfAndrpod"
+		value="USB-0123456789ABCDEF"/>
+	</parameters>
 	<content>
 		<testcase
 		name="Test001_install_appk"
@@ -26,11 +31,10 @@ reportlevel="Info;20">
 		<testcase
 		name="Test002_popup_notifycation"
 		id="d328a4e2-821b-4c0a-aecb-7c7a402c705d">
-			<testmodule
-			name="Test002_popup_notifycation"
-			id="9ccfb462-69e7-420b-8f66-5ca98fe4cd8a"
-			ref="71a72134-a2aa-488b-aec0-7c305e8246d6"
-			type="Recording"/>
+			<modulegroup
+			name="PushAndLogin2"
+			id="a8aa9d96-b841-46cd-9f88-322ffd025a15"
+			ref="39c8bda7-1371-4685-8f5d-4d76965fa7b4"/>
 		</testcase>
 		<testcase
 		name="Test003_login"

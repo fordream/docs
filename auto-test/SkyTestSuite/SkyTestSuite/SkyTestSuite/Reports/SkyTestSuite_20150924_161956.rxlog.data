@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report>
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="90d9c4c71ee3e5"
+		totalerrorcount="3"
+		totalwarningcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="3"
+		totalblockedcount="0"
+		user="acv-dev-android-02"
+		host="WIN-GVTE56MPVPA"
+		rxversion="5.4.2.25689"
+		osversion="Windows 7 Service Pack 1 32bit"
+		runtimeversion="4.0.30319.17929"
+		procarch="32bit"
+		language="en-US"
+		screenresolution="1440x900"
+		timestamp="9/24/2015 4:19:56 PM"
+		timestampiso="2015-09-24T09:19:56"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="13.88s"
+			durationms="13884"
+			type="test suite"
+			rid="c00bbb5d701049"
+			totalerrorcount="3"
+			totalwarningcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="3"
+			totalblockedcount="0"
+			testsuitename="SkyTestSuite"
+			runconfigname="TestRun"
+			runlabel=""
+			maxchildren="3">
+			<params/>
+			<detail>
+			</detail>
+			<activity
+				result="Failed"
+				duration="13.14s"
+				durationms="13138"
+				type="test case"
+				rid="b46c5440d341f0"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				testcasename="Test001_install_appk"
+				testcaseid="d97fae0a-9662-4ddc-8de0-2ab733a97c45"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+					result="Failed"
+					duration="13.09s"
+					durationms="13087"
+					type="test module"
+					rid="2fc8acfffa9be2e4"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="Test001_insttall_apk"
+					moduleid="b7c8d521-df31-43d7-95c8-c42a5ec1a8ee"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<errmsg>
+						Instrumentation failed. Error:
+Device 'USB-0123456789ABCDEF' couldn't be found. Please use the devices dialog to configure your devices.
+
+
+Ranorex.Instrumentation.exe /help -- Display general help.
+Ranorex.Instrumentation.exe /pagename:n /help -- display specific help.
+
+d,   device       The name of the device to that the APK file shall be
+                  deployed. This parameter is not required if deploymode is set
+                  to 'NoDeploy'.
+
+a,   apkfile      Required. The path where the APK file resides.
+
+s,   skip         Default is False. Set this switch to skip APK file
+                  instrumentation prior to deploying.
+
+dm,  deploymode   Possible Values: WiFi, Usb, NoDeploy, Auto. Default is Auto.
+                  Specifies how the apk file shall be deployed. Set to nodeploy
+                  if the file shall not be deployed to the device. Auto means
+                  the connection mechanism used to configure the device will be
+                  used.
+
+o,   outfile      Sets a custom output location for the instrumented file. This
+                  can be a directory or a file path. Read/Write permission is
+                  required for this path. If a directory was specified,  (to
+                  specify a directory add a trailing '\') the process will
+                  place the APP file in it with the -instrumented suffix added
+                  to the source file name. If the file already exists it will
+                  be overwritten. This option only has an effect if an APP is
+                  instrumented (no skip).
+
+p,   pagename     Default is UserSelect. Set this option to directly navigate
+                  to a specific page. Is also required for automated command
+                  line based instrumentation. Pages are: android, chrome,
+                  chromium, firefox, flex, ios, java, safari. Note: The default
+                  'Select' is not supported in the command line.
+
+?,   help         Default is False. Displays command line arguments help.
+
+&#10;
+					</errmsg>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.273"
+						timeRelativeToTestModuleStartTime="00:00.016"
+						timeWallClock="16:19:56"
+						time="00:00.273"
+						level="Info"
+						category="Application"
+						errimg="images_SkyTestSuite_20150924_161956\SkyTestSuite_20150924_161956_1246db87_trace.jpg"
+						errthumb="images_SkyTestSuite_20150924_161956\SkyTestSuite_20150924_161956_1246db87_trace_thumb.jpg">
+						<message>
+							Deploying android app 'C:\Users\tv\Desktop\test\Sky.apk' to device 'USB-0123456789ABCDEF'.
+						</message>
+						<metainfo
+							itemindex="0"
+							codefile="c:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\Test001_insttall_apk.cs"
+							codeline="82"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.161"
+						timeRelativeToTestModuleStartTime="00:12.904"
+						timeWallClock="16:20:09"
+						time="00:13.161"
+						level="Error"
+						category="Module"
+						errimg="images_SkyTestSuite_20150924_161956\SkyTestSuite_20150924_161956_a7e1ab4a_trace.jpg"
+						errthumb="images_SkyTestSuite_20150924_161956\SkyTestSuite_20150924_161956_a7e1ab4a_trace_thumb.jpg">
+						<message>
+							Instrumentation failed. Error:<br/>Device 'USB-0123456789ABCDEF' couldn't be found. Please use the devices dialog to configure your devices.<br/><br/><br/>Ranorex.Instrumentation.exe /help -- Display general help.<br/>Ranorex.Instrumentation.exe /pagename:n /help -- display specific help.<br/><br/>d,   device       The name of the device to that the APK file shall be<br/>                  deployed. This parameter is not required if deploymode is set<br/>                  to 'NoDeploy'.<br/><br/>a,   apkfile      Required. The path where the APK file resides.<br/><br/>s,   skip         Default is False. Set this switch to skip APK file<br/>                  instrumentation prior to deploying.<br/><br/>dm,  deploymode   Possible Values: WiFi, Usb, NoDeploy, Auto. Default is Auto.<br/>                  Specifies how the apk file shall be deployed. Set to nodeploy<br/>                  if the file shall not be deployed to the device. Auto means<br/>                  the connection mechanism used to configure the device will be<br/>                  used.<br/><br/>o,   outfile      Sets a custom output location for the instrumented file. This<br/>                  can be a directory or a file path. Read/Write permission is<br/>                  required for this path. If a directory was specified,  (to<br/>                  specify a directory add a trailing '\') the process will<br/>                  place the APP file in it with the -instrumented suffix added<br/>                  to the source file name. If the file already exists it will<br/>                  be overwritten. This option only has an effect if an APP is<br/>                  instrumented (no skip).<br/><br/>p,   pagename     Default is UserSelect. Set this option to directly navigate<br/>                  to a specific page. Is also required for automated command<br/>                  line based instrumentation. Pages are: android, chrome,<br/>                  chromium, firefox, flex, ios, java, safari. Note: The default<br/>                  'Select' is not supported in the command line.<br/><br/>?,   help         Default is False. Displays command line arguments help.<br/><br/>&#10;
+						</message>
+						<metainfo
+							stacktrace="   at Ranorex.Host.InstrumentAndDeployAndroidApp(String deviceName, String sourceApkFilePath, Boolean instrument, DeploymentModes deployMode, Duration timeout, InstrumentApkOptions options)
+   at SkyTestSuite.Test001_insttall_apk.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\Test001_insttall_apk.cs:line 83
+   at Ranorex.Core.Testing.TestSuiteModule.RunInternal(DataContext parentDataContext)"
+							codefile="c:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\Test001_insttall_apk.cs"
+							codeline="83"
+							loglvl="Error"
+							itemindex="0"/>
+					</item>
+				</activity>
+			</activity>
+			<activity
+				result="Failed"
+				duration="358ms"
+				durationms="358"
+				type="test case"
+				rid="66d581a596deb34"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				testcasename="Test002_popup_notifycation"
+				testcaseid="d328a4e2-821b-4c0a-aecb-7c7a402c705d"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+					result="Failed"
+					duration="354ms"
+					durationms="354"
+					type="test module"
+					rid="10c420a1aec2c7c4"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="Test002_popup_notifycation"
+					moduleid="71a72134-a2aa-488b-aec0-7c305e8246d6"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<errmsg>
+						Cannot start mobile app 'com.SkyPremiumLtd.SkyPremium' because there is no device with name 'USB-0123456789ABCDEF' in the list of configured devices.
+					</errmsg>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.363"
+						timeRelativeToTestModuleStartTime="00:00.008"
+						timeWallClock="16:20:10"
+						time="00:13.363"
+						level="Info"
+						category="Application"
+						errimg="images_SkyTestSuite_20150924_161956\SkyTestSuite_20150924_161956_8f59cc58_trace.jpg"
+						errthumb="images_SkyTestSuite_20150924_161956\SkyTestSuite_20150924_161956_8f59cc58_trace_thumb.jpg">
+						<message>
+							Run mobile app 'com.SkyPremiumLtd.SkyPremium' on device 'USB-0123456789ABCDEF'.
+						</message>
+						<metainfo
+							itemindex="0"
+							codefile="c:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\Test002_popup_notifycation.cs"
+							codeline="82"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.538"
+						timeRelativeToTestModuleStartTime="00:00.183"
+						timeWallClock="16:20:10"
+						time="00:13.538"
+						level="Error"
+						category="Module"
+						errimg="images_SkyTestSuite_20150924_161956\SkyTestSuite_20150924_161956_ff868da8_trace.jpg"
+						errthumb="images_SkyTestSuite_20150924_161956\SkyTestSuite_20150924_161956_ff868da8_trace_thumb.jpg">
+						<message>
+							Cannot start mobile app 'com.SkyPremiumLtd.SkyPremium' because there is no device with name 'USB-0123456789ABCDEF' in the list of configured devices.
+						</message>
+						<metainfo
+							stacktrace="   at Ranorex.Host.RunMobileApp(String deviceDisplayName, String appName, Boolean resetInitialState)
+   at SkyTestSuite.Test002_popup_notifycation.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\Test002_popup_notifycation.cs:line 83
+   at Ranorex.Core.Testing.TestSuiteModule.RunInternal(DataContext parentDataContext)"
+							codefile="c:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\Test002_popup_notifycation.cs"
+							codeline="83"
+							loglvl="Error"
+							itemindex="0"/>
+					</item>
+				</activity>
+			</activity>
+			<activity
+				result="Failed"
+				duration="323ms"
+				durationms="323"
+				type="test case"
+				rid="362bf419196ea80"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				testcasename="Test003_login"
+				testcaseid="98fda5cd-612e-4f52-8943-57bcc0d349ad"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+					result="Failed"
+					duration="317ms"
+					durationms="317"
+					type="test module"
+					rid="22b5c3a689b45557"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="Test003_login"
+					moduleid="781c5916-2f50-470d-af0a-5b9e8a9072d4"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<errmsg>
+						Cannot start mobile app 'com.SkyPremiumLtd.SkyPremium' because there is no device with name 'USB-0123456789ABCDEF' in the list of configured devices.
+					</errmsg>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.718"
+						timeRelativeToTestModuleStartTime="00:00.003"
+						timeWallClock="16:20:10"
+						time="00:13.718"
+						level="Info"
+						category="Application"
+						errimg="images_SkyTestSuite_20150924_161956\SkyTestSuite_20150924_161956_3b22ab76_trace.jpg"
+						errthumb="images_SkyTestSuite_20150924_161956\SkyTestSuite_20150924_161956_3b22ab76_trace_thumb.jpg">
+						<message>
+							Run mobile app 'com.SkyPremiumLtd.SkyPremium' on device 'USB-0123456789ABCDEF'.
+						</message>
+						<metainfo
+							itemindex="0"
+							codefile="c:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\Test003_login.cs"
+							codeline="82"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.860"
+						timeRelativeToTestModuleStartTime="00:00.145"
+						timeWallClock="16:20:10"
+						time="00:13.860"
+						level="Error"
+						category="Module"
+						errimg="images_SkyTestSuite_20150924_161956\SkyTestSuite_20150924_161956_8639de0c_trace.jpg"
+						errthumb="images_SkyTestSuite_20150924_161956\SkyTestSuite_20150924_161956_8639de0c_trace_thumb.jpg">
+						<message>
+							Cannot start mobile app 'com.SkyPremiumLtd.SkyPremium' because there is no device with name 'USB-0123456789ABCDEF' in the list of configured devices.
+						</message>
+						<metainfo
+							stacktrace="   at Ranorex.Host.RunMobileApp(String deviceDisplayName, String appName, Boolean resetInitialState)
+   at SkyTestSuite.Test003_login.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\Test003_login.cs:line 83
+   at Ranorex.Core.Testing.TestSuiteModule.RunInternal(DataContext parentDataContext)"
+							codefile="c:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\Test003_login.cs"
+							codeline="83"
+							loglvl="Error"
+							itemindex="0"/>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

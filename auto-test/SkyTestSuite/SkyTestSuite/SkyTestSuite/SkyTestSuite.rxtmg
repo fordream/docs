@@ -1,4 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <modulegroups
 name="SkyTestSuite"
-rxversion="5.4.2.25689"/>
+rxversion="5.4.2.25689">
+	<modulegroupdef
+	name="PushAndLogin2"
+	id="39c8bda7-1371-4685-8f5d-4d76965fa7b4">
+		<groupvariables>
+			<groupvariable
+			name="deviceId"
+			id="a90e0e96-174a-4934-bc5b-2cc2bef34469"
+			defaultvalue="USB-0123456789ABCDEF"/>
+		</groupvariables>
+		<testmodule
+		name="Test002_popup_notifycation"
+		id="c4fe6a50-2d37-42fe-b1d9-79c4491be09b"
+		ref="71a72134-a2aa-488b-aec0-7c305e8246d6"
+		type="Recording"/>
+		<testmodule
+		name="Test003_login"
+		id="cad1aa33-fef7-423a-90d9-061a6284682e"
+		ref="781c5916-2f50-470d-af0a-5b9e8a9072d4"
+		type="Recording"/>
+	</modulegroupdef>
+</modulegroups>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report>
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1da2275c3e0e3680"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="acv-dev-android-02"
+		host="WIN-GVTE56MPVPA"
+		rxversion="5.4.2.25689"
+		osversion="Windows 7 Service Pack 1 32bit"
+		runtimeversion="4.0.30319.17929"
+		procarch="32bit"
+		language="en-US"
+		screenresolution="1440x900"
+		timestamp="9/24/2015 5:27:00 PM"
+		timestampiso="2015-09-24T10:27:00"
+		timeoutfactor="1"
+		module="Test001_insttall_apk">
+		<detail>
+			Test001_insttall_apk
+		</detail>
+		<errmsg>
+			Instrumentation failed. Error:
+Device 'USB-0123456789ABCDEF' couldn't be found. Please use the devices dialog to configure your devices.
+
+
+Ranorex.Instrumentation.exe /help -- Display general help.
+Ranorex.Instrumentation.exe /pagename:n /help -- display specific help.
+
+d,   device       The name of the device to that the APK file shall be
+                  deployed. This parameter is not required if deploymode is set
+                  to 'NoDeploy'.
+
+a,   apkfile      Required. The path where the APK file resides.
+
+s,   skip         Default is False. Set this switch to skip APK file
+                  instrumentation prior to deploying.
+
+dm,  deploymode   Possible Values: WiFi, Usb, NoDeploy, Auto. Default is Auto.
+                  Specifies how the apk file shall be deployed. Set to nodeploy
+                  if the file shall not be deployed to the device. Auto means
+                  the connection mechanism used to configure the device will be
+                  used.
+
+o,   outfile      Sets a custom output location for the instrumented file. This
+                  can be a directory or a file path. Read/Write permission is
+                  required for this path. If a directory was specified,  (to
+                  specify a directory add a trailing '\') the process will
+                  place the APP file in it with the -instrumented suffix added
+                  to the source file name. If the file already exists it will
+                  be overwritten. This option only has an effect if an APP is
+                  instrumented (no skip).
+
+p,   pagename     Default is UserSelect. Set this option to directly navigate
+                  to a specific page. Is also required for automated command
+                  line based instrumentation. Pages are: android, chrome,
+                  chromium, firefox, flex, ios, java, safari. Note: The default
+                  'Select' is not supported in the command line.
+
+?,   help         Default is False. Displays command line arguments help.
+
+&#10;
+		</errmsg>
+		<varbindings/>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.686"
+			timeRelativeToTestModuleStartTime="00:00.686"
+			timeWallClock="17:27:01"
+			time="00:00.686"
+			level="Warn"
+			category="Data"
+			errimg=".\Test001_insttall_apk20150924_172647_0044134a_trace.jpg"
+			errthumb=".\Test001_insttall_apk20150924_172647_0044134a_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>deviceIDAndrroid
+			</message>
+			<metainfo
+				loglvl="Warn"/>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.920"
+			timeRelativeToTestModuleStartTime="00:00.920"
+			timeWallClock="17:27:01"
+			time="00:00.920"
+			level="Info"
+			category="Application"
+			errimg=".\Test001_insttall_apk20150924_172647_8a409095_trace.jpg"
+			errthumb=".\Test001_insttall_apk20150924_172647_8a409095_trace_thumb.jpg">
+			<message>
+				Deploying android app 'C:\Users\tv\Desktop\test\Sky.apk' to device from variable '$deviceIDAndrroid'.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\Test001_insttall_apk.cs"
+				codeline="95"
+				loglvl="Info"/>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.684"
+			timeRelativeToTestModuleStartTime="00:15.684"
+			timeWallClock="17:27:16"
+			time="00:15.684"
+			level="Error"
+			category="Module"
+			errimg=".\Test001_insttall_apk20150924_172647_afd015e2_trace.jpg"
+			errthumb=".\Test001_insttall_apk20150924_172647_afd015e2_trace_thumb.jpg">
+			<message>
+				Instrumentation failed. Error:<br/>Device 'USB-0123456789ABCDEF' couldn't be found. Please use the devices dialog to configure your devices.<br/><br/><br/>Ranorex.Instrumentation.exe /help -- Display general help.<br/>Ranorex.Instrumentation.exe /pagename:n /help -- display specific help.<br/><br/>d,   device       The name of the device to that the APK file shall be<br/>                  deployed. This parameter is not required if deploymode is set<br/>                  to 'NoDeploy'.<br/><br/>a,   apkfile      Required. The path where the APK file resides.<br/><br/>s,   skip         Default is False. Set this switch to skip APK file<br/>                  instrumentation prior to deploying.<br/><br/>dm,  deploymode   Possible Values: WiFi, Usb, NoDeploy, Auto. Default is Auto.<br/>                  Specifies how the apk file shall be deployed. Set to nodeploy<br/>                  if the file shall not be deployed to the device. Auto means<br/>                  the connection mechanism used to configure the device will be<br/>                  used.<br/><br/>o,   outfile      Sets a custom output location for the instrumented file. This<br/>                  can be a directory or a file path. Read/Write permission is<br/>                  required for this path. If a directory was specified,  (to<br/>                  specify a directory add a trailing '\') the process will<br/>                  place the APP file in it with the -instrumented suffix added<br/>                  to the source file name. If the file already exists it will<br/>                  be overwritten. This option only has an effect if an APP is<br/>                  instrumented (no skip).<br/><br/>p,   pagename     Default is UserSelect. Set this option to directly navigate<br/>                  to a specific page. Is also required for automated command<br/>                  line based instrumentation. Pages are: android, chrome,<br/>                  chromium, firefox, flex, ios, java, safari. Note: The default<br/>                  'Select' is not supported in the command line.<br/><br/>?,   help         Default is False. Displays command line arguments help.<br/><br/>&#10;
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Host.InstrumentAndDeployAndroidApp(String deviceName, String sourceApkFilePath, Boolean instrument, DeploymentModes deployMode, Duration timeout, InstrumentApkOptions options)
+   at SkyTestSuite.Test001_insttall_apk.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\Test001_insttall_apk.cs:line 96
+   at Ranorex.Core.Testing.TestSuiteModule.RunInternal(DataContext parentDataContext)"
+				codefile="c:\Users\acv-dev-android-02\Documents\GitHub\docs\auto-test\SkyTestSuite\SkyTestSuite\SkyTestSuite\Test001_insttall_apk.cs"
+				codeline="96"
+				loglvl="Error"
+				itemindex="0"/>
+		</item>
+	</activity>
+</report>

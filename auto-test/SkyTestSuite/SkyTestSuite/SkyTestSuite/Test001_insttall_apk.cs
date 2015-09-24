@@ -41,6 +41,7 @@ namespace SkyTestSuite
         /// </summary>
         public Test001_insttall_apk()
         {
+            deviceIDAndrroid = "USB-0123456789ABCDEF";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace SkyTestSuite
         }
 
 #region Variables
+
+        string _deviceIDAndrroid;
+
+        /// <summary>
+        /// Gets or sets the value of variable deviceIDAndrroid.
+        /// </summary>
+        [TestVariable("8e35c22c-5bae-4406-b5a1-11878f47a23d")]
+        public string deviceIDAndrroid
+        {
+            get { return _deviceIDAndrroid; }
+            set { _deviceIDAndrroid = value; }
+        }
 
 #endregion
 
@@ -79,8 +92,8 @@ namespace SkyTestSuite
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Deploying android app 'C:\\Users\\tv\\Desktop\\test\\Sky.apk' to device 'USB-0123456789ABCDEF'.", new RecordItemIndex(0));
-            Host.Local.InstrumentAndDeployAndroidApp("USB-0123456789ABCDEF", "C:\\Users\\tv\\Desktop\\test\\Sky.apk", true, Host.DeploymentModes.Auto, 600000, new Ranorex.Core.Remoting.RecordItems.InstrumentApkOptions() { InstrumentationFlags = "", EnableWebTesting = true, TreeSimplification = true, FullImageComparison = true, RIdClass = "", KeyStore = "", KeyAlias = "", JdkBinPath = "", KeyStorePass = "", KeyPass = "" });
+            Report.Log(ReportLevel.Info, "Application", "Deploying android app 'C:\\Users\\tv\\Desktop\\test\\Sky.apk' to device from variable '$deviceIDAndrroid'.", new RecordItemIndex(0));
+            Host.Local.InstrumentAndDeployAndroidApp(deviceIDAndrroid, "C:\\Users\\tv\\Desktop\\test\\Sky.apk", true, Host.DeploymentModes.Auto, 600000, new Ranorex.Core.Remoting.RecordItems.InstrumentApkOptions() { InstrumentationFlags = "", EnableWebTesting = true, TreeSimplification = true, FullImageComparison = true, RIdClass = "", KeyStore = "", KeyAlias = "", JdkBinPath = "", KeyStorePass = "", KeyPass = "" });
             Delay.Milliseconds(500);
             
         }

@@ -41,6 +41,7 @@ namespace SkyTestSuite
         /// </summary>
         public Test002_popup_notifycation()
         {
+            deviceIDAndrroid = "USB-0123456789ABCDEF";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace SkyTestSuite
         }
 
 #region Variables
+
+        string _deviceIDAndrroid;
+
+        /// <summary>
+        /// Gets or sets the value of variable deviceIDAndrroid.
+        /// </summary>
+        [TestVariable("07a924cd-68d8-4055-9b43-e927c2665044")]
+        public string deviceIDAndrroid
+        {
+            get { return _deviceIDAndrroid; }
+            set { _deviceIDAndrroid = value; }
+        }
 
 #endregion
 
@@ -79,8 +92,8 @@ namespace SkyTestSuite
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'com.SkyPremiumLtd.SkyPremium' on device 'USB-0123456789ABCDEF'.", new RecordItemIndex(0));
-            Host.Local.RunMobileApp("USB-0123456789ABCDEF", "com.SkyPremiumLtd.SkyPremium", true);
+            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'com.SkyPremiumLtd.SkyPremium' on device '$deviceIDAndrroid'.", new RecordItemIndex(0));
+            Host.Local.RunMobileApp("$deviceIDAndrroid", "com.SkyPremiumLtd.SkyPremium", true);
             Delay.Milliseconds(3500);
             
             Report.Log(ReportLevel.Info, "Touch", "Touch item 'ComSkyPremiumLtdSkyPremium.RStringMsgPushConfirmNo' at 76;44", repo.ComSkyPremiumLtdSkyPremium.RStringMsgPushConfirmNoInfo, new RecordItemIndex(1));

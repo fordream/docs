@@ -25,28 +25,18 @@ mode="Global">
 	<codegen
 	classname="Test001_insttall_apk"
 	namespace="SkyTestSuite"/>
-	<variables>
-		<var
-		name="deviceIDAndrroid"
-		id="8e35c22c-5bae-4406-b5a1-11878f47a23d">
-			USB-0123456789ABCDEF
-		</var>
-	</variables>
+	<variables/>
 	<recorditems>
 		<deployapkrecorditem
 		enabled="True"
 		optional="False"
 		duration="500ms"
-		devicename="USB-0123456789ABCDEF"
-		apkpath="C:\Users\tv\Desktop\test\Sky.apk"
+		devicename="emulator-5554"
+		apkpath="C:\apk\Sky.apk"
 		instrument="True"
 		timeout="600000ms">
 			<comment/>
-			<bindings>
-				<binding
-				target="DeviceName"
-				variable="deviceIDAndrroid"/>
-			</bindings>
+			<bindings/>
 			<InstrumentApkOptions
 			InstrumentationFlags=""
 			EnableWebTesting="True"

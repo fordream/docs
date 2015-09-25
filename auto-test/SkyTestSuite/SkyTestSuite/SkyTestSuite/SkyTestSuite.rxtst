@@ -56,8 +56,6 @@ reportlevel="Info;20">
 			id="ae0fa204-45ac-4f71-b0c0-1073d7aeb739"/>
 			<testcase
 			id="d328a4e2-821b-4c0a-aecb-7c7a402c705d"/>
-			<testcase
-			id="d97fae0a-9662-4ddc-8de0-2ab733a97c45"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references/>

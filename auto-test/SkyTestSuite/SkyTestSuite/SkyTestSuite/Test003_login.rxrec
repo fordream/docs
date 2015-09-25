@@ -32,7 +32,7 @@ mode="Global">
 		optional="False"
 		duration="3500ms"
 		application="com.SkyPremiumLtd.SkyPremium"
-		devicename="$deviceIDAndrroid"
+		devicename="emulator-5554"
 		resetInitialState="True">
 			<comment/>
 			<bindings/>

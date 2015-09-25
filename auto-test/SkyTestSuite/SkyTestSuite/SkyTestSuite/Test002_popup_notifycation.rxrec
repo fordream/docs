@@ -25,20 +25,14 @@ mode="Global">
 	<codegen
 	classname="Test002_popup_notifycation"
 	namespace="SkyTestSuite"/>
-	<variables>
-		<var
-		name="deviceIDAndrroid"
-		id="07a924cd-68d8-4055-9b43-e927c2665044">
-			USB-0123456789ABCDEF
-		</var>
-	</variables>
+	<variables/>
 	<recorditems>
 		<runmobileapprecorditem
 		enabled="True"
 		optional="False"
 		duration="3500ms"
 		application="com.SkyPremiumLtd.SkyPremium"
-		devicename="$deviceIDAndrroid"
+		devicename="emulator-5554"
 		resetInitialState="True">
 			<comment/>
 			<bindings/>
